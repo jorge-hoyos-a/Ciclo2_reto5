@@ -1,0 +1,32 @@
+package reto4;
+
+import javax.swing.JFrame;
+import java.awt.*;
+
+import reto4.view.ReportesView;
+
+public class App 
+{
+    public static void main( String[] args )
+    {
+        /**
+        var reportesView = new ReportesView();
+        var banco = "Conavi";
+        reportesView.proyectosFinanciadosPorBanco(banco);
+
+        var reportesView2 = new ReportesView();
+        var limiteInferior = 50_000d;
+        reportesView2.totalAdeudadoPorProyectosSuperioresALimite(limiteInferior);
+        **/
+
+        var reportesView3 = new ReportesView();
+        FlowLayout flowLayout = new FlowLayout();
+        reportesView3.setLayout(flowLayout);
+        reportesView3.setMinimumSize(new Dimension(600,400));
+        reportesView3.setVisible(true);
+        reportesView3.setTitle("Universidad Tecnológica de Pereira - MinTIC");
+        reportesView3.setResizable(false);
+        reportesView3.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        reportesView3.setLocationRelativeTo(null);
+    }
+}
